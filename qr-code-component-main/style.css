@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-display: swap;
+    font-weight: 400 700; 
+}
+
+:root {
+    --clr-hsl-900: 218, 44%, 22%;
+    --clr-hsl-500: 216, 15%, 48%;
+    --clr-hsl-300: 212, 45%, 89%;
+    --clr-white: 0, 0%, 100%;
+
+    --clr-primary-hsl-900: hsl(var(--clr-hsl-900));
+    --clr-primary-hsl-500: hsl(var(--clr-hsl-500));
+    --clr-primary-hsl-300: hsl(var(--clr-hsl-300));
+
+    --clr-primary-white: hsl(var(--clr-white));
+
+    --font-family-default: 'Outfit';
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-bold: 22px;
+    --fs-regular: 15px;
+
+    --space-200: 16px;
+    --space-300: 24px;
+    --space-500: 40px;
+}
+
+body {
+    background-color: var(--clr-primary-hsl-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-family-default);
+    font-size: var(--fs-regular);
+    color: var(--clr-primary-hsl-900);
+}
+
+.frame {
+    background-color: var(--clr-primary-white);
+    border-radius: 20px;
+    height: 499px;
+    width: 320px;
+    padding: 16px 16px 40px 16px;
+    text-align: center;
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+}
+
+.img-box img{
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    margin-bottom: var(--space-300);
+}
+
+.text_container {
+    padding-left: var(--space-200);
+    padding-right: var(--space-200);
+}
+
+.bold-txt {
+    margin-bottom: var(--space-200);
+    font-size: var(--fs-bold);
+}
+
+.txt-pres-1 {
+    font-weight: var(--fw-bold);
+    line-height: 120%;
+    letter-spacing: 0px;   
+    color: var(--clr-primary-hsl-900);
+    
+}
+
+.regular-txt {
+    font-size: var(--fs-regular);
+}
+
+.txt-pres-2 {
+    font-weight: var(--fw-regular);
+    color: var(--clr-primary-hsl-500);
+}
+
+/* Styling for mobil (375px) */
+@media (max-width: 375px) {
+   
+}
